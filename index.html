@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusWeb</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" />
+    <link rel="stylesheet" href="/assets/css/global.css" />
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <div id="navbar-container"></div>
+
+    <!-- Alerts -->
+    <div id="alertContainer"></div>
+
+    <main class="flex-grow-1">
+        <div class="container py-5">
+            <h2 class="text-center mb-5">Welcome to Nexus Inc</h2>
+            <p class="text-center mb-5">At Nexus Inc, we specialize in developing high-quality software solutions for
+                businesses. Whether you need bug tracking tools, custom websites, or updates for your existing systems,
+                we have the expertise to deliver.</p>
+
+            <!-- Services Section -->
+            <h3 class="text-center mb-4">Our Services</h3>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- NexusBugTracker -->
+                <div class="col">
+                    <sl-card>
+                        <h3 slot="header">NexusBugTracker</h3>
+                        <p>A powerful bug tracking system that helps teams manage, prioritize, and resolve bugs
+                            efficiently.</p>
+                        <sl-button class="alert-button" data-message="in development" data-variant="warning"
+                            variant="primary">Shortly</sl-button>
+                    </sl-card>
+                </div>
+
+
+                <!-- Custom Websites -->
+                <div class="col">
+                    <sl-card>
+                        <h3 slot="header">Custom Websites</h3>
+                        <p>We create personalized websites tailored to your business needs, using the latest
+                            technologies like React, Angular, and Node.js.</p>
+                        <sl-button class="alert-button" data-message="in development" data-variant="warning"
+                            variant="primary">Shortly</sl-button>
+                    </sl-card>
+                </div>
+
+                <!-- Website Updates -->
+                <div class="col">
+                    <sl-card>
+                        <h3 slot="header">Website Updates</h3>
+                        <p>Need updates to your existing website? We provide maintenance and upgrades to keep your site
+                            running smoothly.</p>
+                        <sl-button href="/pages/pricing.html">Get Started</sl-button>
+                    </sl-card>
+                </div>
+            </div>
+
+            <!-- Technologies Section -->
+            <h3 class="text-center mt-5 mb-4">Our Technologies</h3>
+            <p class="text-center">We leverage the latest technologies like React, Angular, Node.js, and Firebase to
+                build scalable and reliable applications.</p>
+
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <!-- React & Angular -->
+                <div class="col">
+                    <sl-card>
+                        <h3 slot="header">React & Angular</h3>
+                        <p>We specialize in creating interactive, dynamic web apps using modern front-end frameworks
+                            like React and Angular.</p>
+                    </sl-card>
+                </div>
+
+                <!-- Node.js & Firebase -->
+                <div class="col">
+                    <sl-card>
+                        <h3 slot="header">Node.js & Firebase</h3>
+                        <p>For backend services, we use Node.js and Firebase to build scalable APIs and manage real-time
+                            data.</p>
+                    </sl-card>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-container"></div>
+    <script type="module" src="/assets/js/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusWeb</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" />
+    <link rel="stylesheet" href="/assets/css/global.css" />
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <div id="navbar-container"></div>
+
+    <!-- Alerts -->
+    <div id="alertContainer"></div>
+
+    <main class="flex-grow-1">
+        <div class="container py-5">
+            <h2 class="text-center mb-3">Pricing Plans</h2>
+
+            <!-- NexusBugTracker -->
+            <h4 class="text-center mb-2">NexusBugTracker</h2>
+                <div class="d-flex justify-content-center gap-4 flex-wrap">
+                    <div class="col-md-3">
+                        <sl-card class="w-100">
+                            <h3 slot="header">Classic Plan</h3>
+                            <p>$9/month</p>
+                            <ul class="ps-3">
+                                <li>1 Project</li>
+                                <li>5GB Storage</li>
+                                <li>Email Support</li>
+                            </ul>
+                            <sl-button class="alert-button" data-message="in development" data-variant="warning">Choose
+                                Plan</sl-button>
+                        </sl-card>
+                    </div>
+                    <div class="col-md-3">
+                        <sl-card class="w-100">
+                            <h3 slot="header">Standard Plan</h3>
+                            <p>$40/month</p>
+                            <ul class="ps-3">
+                                <li>5 Projects</li>
+                                <li>20GB Storage</li>
+                                <li>Priority Support</li>
+                            </ul>
+                            <sl-button class="alert-button" data-message="in development" data-variant="warning">Choose
+                                Plan</sl-button>
+                        </sl-card>
+                    </div>
+                    <div class="col-md-3">
+                        <sl-card class="w-100">
+                            <h3 slot="header">Premium Plan</h3>
+                            <p>$150/month</p>
+                            <ul class="ps-3">
+                                <li>Unlimited Projects</li>
+                                <li>50GB Storage</li>
+                                <li>24/7 Support</li>
+                            </ul>
+                            <sl-button class="alert-button" data-message="in development" data-variant="warning">Choose
+                                Plan</sl-button>
+                        </sl-card>
+                    </div>
+                </div>
+
+                <!-- Custom Websites -->
+                <h4 class="text-center mb-2 mt-3">Custom Websites</h2>
+                    <div class="d-flex justify-content-center gap-4 flex-wrap">
+                        <div class="col-md-3">
+                            <sl-card class="w-100">
+                                <h3 slot="header">Classic Plan</h3>
+                                <p>$100</p>
+                                <ul class="ps-3">
+                                    <li>1 Project</li>
+                                    <li>Front-end</li>
+                                    <li>Email Support</li>
+                                </ul>
+                                <sl-button class="alert-button" data-message="in development"
+                                    data-variant="warning">Choose Plan</sl-button>
+                            </sl-card>
+                        </div>
+                        <div class="col-md-3">
+                            <sl-card class="w-100">
+                                <h3 slot="header">Standard Plan</h3>
+                                <p>$300</p>
+                                <ul class="ps-3">
+                                    <li>1 Project</li>
+                                    <li>Front-end and Back-end</li>
+                                    <li>Connection with Firebase</li>
+                                    <li>Priority Support</li>
+                                </ul>
+                                <sl-button class="alert-button" data-message="in development"
+                                    data-variant="warning">Choose Plan</sl-button>
+                            </sl-card>
+                        </div>
+                        <div class="col-md-3">
+                            <sl-card class="w-100">
+                                <h3 slot="header">Premium Plan</h3>
+                                <p>$500</p>
+                                <ul class="ps-3">
+                                    <li>1 Project</li>
+                                    <li>Front-end and Back-end</li>
+                                    <li>Connection with Firebase or SQL Server</li>
+                                    <li>Own API</li>
+                                    <li>24/7 Support</li>
+                                </ul>
+                                <sl-button class="alert-button" data-message="in development"
+                                    data-variant="warning">Choose Plan</sl-button>
+                            </sl-card>
+                        </div>
+                    </div>
+
+                    <!-- Websites Updates -->
+                    <h4 class="text-center mb-2 mt-3">Websites Updates</h2>
+                        <div class="d-flex justify-content-center gap-4 flex-wrap">
+                            <div class="col-md-3">
+                                <sl-card class="w-100">
+                                    <h3 slot="header">Front-end</h3>
+                                    <p>$20</p>
+                                    <ul class="ps-3">
+                                        <li>1 Project</li>
+                                        <li>Make changes to the Front-end, such as changing styling, swapping components
+                                            around, etc.</li>
+                                    </ul>
+                                    <sl-button class="alert-button" data-message="in development"
+                                        data-variant="warning">Choose Plan</sl-button>
+                                </sl-card>
+                            </div>
+                            <div class="col-md-3">
+                                <sl-card class="w-100">
+                                    <h3 slot="header">Back-end</h3>
+                                    <p>$100</p>
+                                    <ul class="ps-3">
+                                        <li>1 Project</li>
+                                        <li>Make changes to the back-end, such as updating API logic, modifying database
+                                            queries, optimizing server-side performance, or restructuring service
+                                            layers.</li>
+                                    </ul>
+                                    <sl-button class="alert-button" data-message="in development"
+                                        data-variant="warning">Choose Plan</sl-button>
+                                </sl-card>
+                            </div>
+                            <div class="col-md-3">
+                                <sl-card class="w-100">
+                                    <h3 slot="header">Fullstack</h3>
+                                    <p>$180</p>
+                                    <ul class="ps-3">
+                                        <li>1 Project</li>
+                                        <li>Make changes across the entire website: from styling and layout adjustments
+                                            to API improvements, database modifications, and performance optimization.
+                                            Ideal for clients who need complete flexibility and deeper system updates.
+                                        </li>
+                                    </ul>
+                                    <sl-button class="alert-button" data-message="in development"
+                                        data-variant="warning">Choose Plan</sl-button>
+                                </sl-card>
+                            </div>
+                        </div>
+        </div>
+
+
+    </main>
+
+    <div id="footer-container"></div>
+    <script type="module" src="/assets/js/scripts.js"></script>
+</body>
+
+</html>
