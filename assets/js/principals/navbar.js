@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
       { label: "About", href: "/pages/about.html" },
       { label: "Pricing", href: "/pages/pricing.html" },
       { label: "Contact us", href: "/pages/contact.html" },
+      { label: "Login", href: "/pages/login.html" },
     ];
   
     //Criando a navbar com a função map para criar uma li para cada item da const nav

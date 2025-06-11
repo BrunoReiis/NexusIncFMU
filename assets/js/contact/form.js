@@ -1,4 +1,4 @@
-import { Alerts } from './alerts.js';
+import { Alerts } from '../principals/alerts';
 
 const form = document.querySelector('form');
 

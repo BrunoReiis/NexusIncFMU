@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" />
+    <link rel="stylesheet" href="/assets/css/global.css" />
+</head>
+
+<body class="bg-light">
+    <div id="navbar-container"></div>
+
+    <!-- Alerts -->
+    <div id="alertContainer"></div>
+
+    <div class="container py-5">
+        <sl-card class="p-4">
+            <h2 class="mb-4">Resumo da Compra</h2>
+
+            <div id="resumoProdutos" class="mb-4 d-grid gap-2"></div>
+            <sl-divider></sl-divider>
+            <p class="fw-bold mt-3" id="resumoTotal">Total: R$ 0</p>
+
+            <h4 class="mt-5 mb-3">Dados do Pagamento</h4>
+
+            <sl-input label="Nome no Cartão" class="mb-3"></sl-input>
+            <sl-input label="Número do Cartão" type="text" class="mb-3"></sl-input>
+            <sl-input label="Validade (MM/AA)" type="text" class="mb-3"></sl-input>
+            <sl-input label="CVV" type="password" class="mb-4" maxlength="4"></sl-input>
+
+            <sl-button variant="primary" class="w-100" id="confirmarPagamento">
+                <sl-icon name="check2-circle" slot="prefix"></sl-icon>
+                Confirmar Pagamento
+            </sl-button>
+        </sl-card>
+    </div>
+
+    <script type="module" src="../assets/js/pagamento/pagar.js"></script>
+    <div id="footer-container"></div>
+    <script type="module" src="/assets/js/principals/scripts.js"></script>
+</body>
+
+</html>

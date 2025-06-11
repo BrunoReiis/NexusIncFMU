@@ -1,5 +1,5 @@
 // Importa dados
-import { ourTeam } from "./mockData.js";
+import { ourTeam } from "../mockData.js";
 
 // Criar um card para cada membro
 document.addEventListener("DOMContentLoaded", () => {

@@ -2,6 +2,8 @@
 import './navbar.js';
 import './footer.js'
 import './alerts.js'
+import '../login/loginForm.js'
+import '../login/registerForm.js'
 
 // Carregar os scritps externos
 function loadScript(src, type = 'text/javascript', isModule = false) {
