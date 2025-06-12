@@ -24,13 +24,13 @@
                 <img src="https://i.pravatar.cc/300" alt="Foto do Usuário" class="profile-photo" />
             </div>
             <div class="profile-info">
-                <h2 id="userName">João Silva</h2>
-                <p id="userEmail">joao.silva@example.com</p>
+                <h2 id="userName"></h2>
+                <p id="userEmail"></p>
 
                 <div class="btn-group">
                     <sl-button variant="primary" id="editProfileBtn" exportparts="base">Editar Perfil</sl-button>
                     <sl-button variant="warning" id="resetPasswordBtn" exportparts="base">Redefinir Senha</sl-button>
-                    <sl-button variant="danger" id="logoutBtn" exportparts="base">Deslogar</sl-button>
+                    <sl-button variant="danger" id="logoutBtn" exportparts="base" onclick="logout()">Deslogar</sl-button>
                 </div>
             </div>
         </div>
@@ -39,6 +39,7 @@
     <div id="footer-container"></div>
 
     <script type="module" src="/assets/js/principals/scripts.js"></script>
+    <script type="module" src="/assets/js/usuario/usuario.js"></script>
 </body>
 
 </html>

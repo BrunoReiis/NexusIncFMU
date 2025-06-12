@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <sl-input id="loginEmail" label="E-mail" type="email" required></sl-input>
       <sl-input id="loginPassword" label="Senha" type="password" required></sl-input>
       <br>
-      <sl-button variant="primary" class="w-100" onclick="handleLogin()">Entrar</sl-button>
+      <sl-button variant="primary" class="w-100" onclick="login()">Entrar</sl-button>
     </div>
   `;
 

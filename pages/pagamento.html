@@ -12,36 +12,37 @@
 </head>
 
 <body class="bg-light">
-    <div id="navbar-container"></div>
+  <div id="navbar-container"></div>
 
-    <!-- Alerts -->
-    <div id="alertContainer"></div>
+  <!-- Alerts -->
+  <div id="alertContainer"></div>
 
-    <div class="container py-5">
-        <sl-card class="p-4">
-            <h2 class="mb-4">Resumo da Compra</h2>
+  <div class="container min-vh-100 d-flex justify-content-center align-items-center">
+    <sl-card class="p-4" style="max-width: 500px; width: 100%;">
+      <h2 class="mb-4">Resumo da Compra</h2>
 
-            <div id="resumoProdutos" class="mb-4 d-grid gap-2"></div>
-            <sl-divider></sl-divider>
-            <p class="fw-bold mt-3" id="resumoTotal">Total: R$ 0</p>
+      <div id="resumoProdutos" class="mb-4 d-grid gap-2"></div>
+      <sl-divider></sl-divider>
+      <p class="fw-bold mt-3" id="resumoTotal">Total: R$ 0</p>
 
-            <h4 class="mt-5 mb-3">Dados do Pagamento</h4>
+      <h4 class="mt-5 mb-3">Dados do Pagamento</h4>
 
-            <sl-input label="Nome no Cartão" class="mb-3"></sl-input>
-            <sl-input label="Número do Cartão" type="text" class="mb-3"></sl-input>
-            <sl-input label="Validade (MM/AA)" type="text" class="mb-3"></sl-input>
-            <sl-input label="CVV" type="password" class="mb-4" maxlength="4"></sl-input>
+      <sl-input label="Nome no Cartão" class="mb-3"></sl-input>
+      <sl-input label="Número do Cartão" type="text" class="mb-3"></sl-input>
+      <sl-input label="Validade (MM/AA)" type="text" class="mb-3"></sl-input>
+      <sl-input label="CVV" type="password" class="mb-4" maxlength="4"></sl-input>
 
-            <sl-button variant="primary" class="w-100" id="confirmarPagamento">
-                <sl-icon name="check2-circle" slot="prefix"></sl-icon>
-                Confirmar Pagamento
-            </sl-button>
-        </sl-card>
-    </div>
+      <sl-button variant="primary" class="w-100" id="confirmarPagamento">
+        <sl-icon name="check2-circle" slot="prefix"></sl-icon>
+        Confirmar Pagamento
+      </sl-button>
+    </sl-card>
+  </div>
 
-    <script type="module" src="../assets/js/pagamento/pagar.js"></script>
-    <div id="footer-container"></div>
-    <script type="module" src="/assets/js/principals/scripts.js"></script>
+  <script type="module" src="../assets/js/pagamento/pagar.js"></script>
+  <div id="footer-container"></div>
+  <script type="module" src="/assets/js/principals/scripts.js"></script>
 </body>
+
 
 </html>
